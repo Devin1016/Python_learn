@@ -13,8 +13,6 @@ import datetime
 
 def save_money_in_n_weeks(money_per_week, increase_money, total_week):
     # 计算n周的存款金额
-    # 账户累计
-    saving_money = 0
     # 记录存款数list
     money_list = []
     # 记录每周账户累计
@@ -43,8 +41,6 @@ def main():
     increase_money = float(input('请输入每周递增金额：'))
     # 总周数
     total_week = int(input('请输入存款周数：'))
-
-    saved_money_list = []
 
     saved_money_list = save_money_in_n_weeks(money_per_week, increase_money,
                                              total_week)
