@@ -1,12 +1,3 @@
-"""
-    功能：BMR计算器
-    版本：4.0
-    V2.0:根据用户输入计算BMR，直到用户退出
-    V3.0：用户可以在一行输入所有信息，带单位的信息输出
-    V4.0：处理异常操作
-"""
-
-
 class bmr:
     def bmr(bmr_str):
         str_list = bmr_str.split(' ')
