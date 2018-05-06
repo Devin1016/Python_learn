@@ -1,10 +1,8 @@
 {
 	"folders": [
 		{
-			"path": "D:\\Python_learn"
+			"path": "."
 		}
 	],
-	"settings": {
-		"python.pythonPath": "d:\\dev\\Anaconda3\\python.exe"
-	}
+	"settings": {}
 }
