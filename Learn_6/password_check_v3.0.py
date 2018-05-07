@@ -3,8 +3,9 @@
         1、密码长度至少8位
         2、密码含有数字
         3、密码含有字母
-    版本:V2.0
+    版本:V3.0
     V2.0增加功能：限制设置密码次数，终止循环
+    V3.0增加功能：保存设置的密码及其对应的强度到文件中
 '''
 
 
@@ -57,6 +58,17 @@ def main():
             strength_level += 1
         else:
             print('密码需要包含字母。')
+
+        if strength_level == 1:
+            strength = '弱'
+        elif strength_level == 2:
+            strength = '较弱'
+        else:
+            strength = '强'
+
+        f = open('./Learn_6/password.cfg', 'a')
+        f.write('密码：{}，强度：{}\n'.format(password, strength))
+        f.close()
 
         if strength_level == 3:
             print('密码强度合格。')
