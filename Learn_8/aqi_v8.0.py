@@ -55,8 +55,8 @@ def main():
     city_list = get_all_cities()
 
     herder = [
-        'City', 'AQI', 'PM2.5/1h', 'PM10/1h', 'CO/1h', 'NO2/1h',
-        'O3/1h', 'O3/8h', 'SO2/1h'
+        'City', 'AQI', 'PM2.5/1h', 'PM10/1h', 'CO/1h', 'NO2/1h', 'O3/1h',
+        'O3/8h', 'SO2/1h'
     ]
 
     with open(
